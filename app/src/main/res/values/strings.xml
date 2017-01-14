@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Service Fees Calculator</string>
+    <string name="title_activity_pay_pal">Pay Pal</string>
+    <string name="title_activity_square">Square.com</string>
+    <string name="title_activity_stripe">Stripe</string>
+    <string name="action_settings">About</string>
+    <string name="author">Adrian Moseley</string>
+    <string name="purpose">The purpose of this application is to teach myself Android development</string>
+    <string name="paypal">Pay Pal</string>
+    <string name="stripe">Stripe.com</string>
+    <string name="square">Square.com</string>
+    <string name="custom">Custom</string>
+    <string name="amountlbl">Please enter the amount you want to receive.</string>
+    <string name="paypalrate">Pay Pal\'s rate is 2.9\%% + .30 per transaction</string>
+    <string name="amounttocharge">This is the amount to charge your customer to receive the above amount.</string>
+    <string name="calculate">Calculate!</string>
+    <string name="dialog_message">You must enter a value!</string>
+    <string name="dialog_title">Value can not be zero.</string>
+    <string name="paypalaffiliation">I am not affiliated with Pay Pal.</string>
+    <string name="chargethecustomer">Charge the customer:  &#36;</string>
+    <string name="paypalfees">Pay Pal Fees: &#36;</string>
+    <string name="squarefees">SQUARE.COM Fees: &#36;</string>
+    <string name="squarerate">Square.com\'s rate is 2.7\%% per swipe transaction \n and 3.9\%% + $0.15 per manual transaction</string>
+    <string name="stripefees">STRIPE Fees: &#36;</string>
+    <string name="striperate">STRIPE\'s rate is 2.9\%% per transaction</string>
+</resources>
