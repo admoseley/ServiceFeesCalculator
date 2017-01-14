@@ -86,7 +86,7 @@
                     android:textColor="#ffffff" />
 
                 <TextView
-                    android:id="@+id/payPalFinalLargeTxt"
+                    android:id="@+id/squareLargeTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0.00"
@@ -110,7 +110,7 @@
                     android:textColor="#ffffff" />
 
                 <TextView
-                    android:id="@+id/payPalFeesLargeTxt"
+                    android:id="@+id/squareFeesLargeTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0.00"
@@ -134,7 +134,7 @@
                     android:text="@string/calculate" />
 
                 <Button
-                    android:id="@+id/clearbtn"
+                    android:id="@+id/squareclearbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/payPalFinalEditText"

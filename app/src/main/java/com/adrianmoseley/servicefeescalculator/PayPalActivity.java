@@ -3,6 +3,7 @@ package com.adrianmoseley.servicefeescalculator;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
@@ -15,7 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class PayPalActivity extends ActionBarActivity {
+public class PayPalActivity extends AppCompatActivity {
     public double payPalAmount;
     public double payPalFinal;
     public double payPalFees;
@@ -24,7 +25,7 @@ public class PayPalActivity extends ActionBarActivity {
     public TextView payPalFeesLargeTxt;
     public Button calculate;
     public Button clearbtn;
-    public Button stripebtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

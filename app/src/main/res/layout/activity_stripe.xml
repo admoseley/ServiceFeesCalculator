@@ -85,7 +85,7 @@
                     android:textColor="#ffffff" />
 
                 <TextView
-                    android:id="@+id/payPalFinalLargeTxt"
+                    android:id="@+id/stripeFinalText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0.00"

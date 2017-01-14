@@ -3,6 +3,7 @@ package com.adrianmoseley.servicefeescalculator;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
@@ -14,7 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class StripeActivity extends ActionBarActivity {
+public class StripeActivity extends AppCompatActivity {
     public double stripeAmount;
     public double stripeFinal;
     public double stripeFees;

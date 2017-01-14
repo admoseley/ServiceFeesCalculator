@@ -3,6 +3,7 @@ package com.adrianmoseley.servicefeescalculator;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
@@ -15,7 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class SquareActivity extends ActionBarActivity {
+public class SquareActivity extends AppCompatActivity {
     public double sqAmount;
     public double sqFinal;
     public double sqFees;
