@@ -38,7 +38,7 @@ public class StripeActivity extends AppCompatActivity {
         stripeAmountET.setFocusable(true);
         TextView tv = (TextView) findViewById(R.id.stripedisclaimer);
         tv.setText(Html.fromHtml("<b>Not Affiliated with STRIPE.COM</b>  " +
-                " <br /> <a style=\"color:white\" href=\"https://stripe.com/us/pricing\"> Click here to view STRIPE Fees.</a>"));
+                " <br /> <a href=\"https://stripe.com/us/pricing\" style=\"color:#ffffff\" > Click here to view STRIPE Fees.</a>"));
         tv.setMovementMethod(LinkMovementMethod.getInstance());
 
         stripeFeesLargeTxt.setTextIsSelectable(true);
@@ -107,7 +107,8 @@ public class StripeActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.stripe_about) {
+            Toast.makeText(StripeActivity.this,"Created by Adrian D. Moseley for free use by all. 2017",  Toast.LENGTH_SHORT).show();
             return true;
         }
 

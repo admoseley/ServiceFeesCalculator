@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.adrianmoseley.servicefeescalculator.PayPalActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/pay_pal_about"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:visible="true"
+        android:enabled="true" />
 </menu>

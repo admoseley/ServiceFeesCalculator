@@ -107,7 +107,8 @@ public class PayPalActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.pay_pal_about) {
+            Toast.makeText(PayPalActivity.this,"Created by Adrian D. Moseley for free use by all. 2017",  Toast.LENGTH_SHORT).show();
             return true;
         }
 

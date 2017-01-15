@@ -6,6 +6,7 @@
     <string name="action_settings">About</string>
     <string name="author">Adrian Moseley</string>
     <string name="purpose">The purpose of this application is to teach myself Android development</string>
+    <string name="GetStarted">To get started, please select a Payment Vendor Above to get fee information</string>
     <string name="paypal">Pay Pal</string>
     <string name="stripe">Stripe.com</string>
     <string name="square">Square.com</string>
@@ -22,5 +23,5 @@
     <string name="squarefees">SQUARE.COM Fees: &#36;</string>
     <string name="squarerate">Square.com\'s rate is 2.7\%% per swipe transaction \n and 3.9\%% + $0.15 per manual transaction</string>
     <string name="stripefees">STRIPE Fees: &#36;</string>
-    <string name="striperate">STRIPE\'s rate is 2.9\%% per transaction</string>
+    <string name="striperate">STRIPE\'s rate is 2.9\%% + .30 cent per transaction</string>
 </resources>

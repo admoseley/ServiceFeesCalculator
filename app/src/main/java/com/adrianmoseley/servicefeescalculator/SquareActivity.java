@@ -107,7 +107,8 @@ public class SquareActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.square_about) {
+            Toast.makeText(SquareActivity.this,"Created by Adrian D. Moseley for free use by all. 2017",  Toast.LENGTH_SHORT).show();
             return true;
         }
 

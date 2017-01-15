@@ -2,16 +2,17 @@ package com.adrianmoseley.servicefeescalculator;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
     public ImageView paypalimg;
+
 
 
     @Override
@@ -34,11 +35,28 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        Toast.makeText(MainActivity.this,"Created by Adrian D. Moseley for free use by all. 2017",  Toast.LENGTH_SHORT).show();
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+    /*    if (id == R.id.action_settings) {
             return true;
         }
 
+        switch (item.getItemId())
+        {
+            case R.id.main_menu_about:
+                Toast.makeText(MainActivity.this,"Created by Adrian D. Moseley for free use by all. 2017",  Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.pay_pal_about:
+                Toast.makeText(MainActivity.this,"Created by Adrian D. Moseley for free use by all. 2017",  Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.square_about:
+                Toast.makeText(MainActivity.this,"Created by Adrian D. Moseley for free use by all. 2017",  Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.stripe_about:
+                Toast.makeText(MainActivity.this,"Created by Adrian D. Moseley for free use by all. 2017",  Toast.LENGTH_SHORT).show();
+                return true;
+        }
+*/
         return super.onOptionsItemSelected(item);
     }
 
