@@ -7,11 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="Overdraw">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,8 +27,6 @@
                 android:id="@+id/servicefeetitle"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/title"
                 android:visibility="visible" />
@@ -33,7 +35,6 @@
                 android:id="@+id/payapalimage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:onClick="startPayPal"
                 android:paddingBottom="@dimen/abc_action_bar_content_inset_material"
                 android:paddingTop="@dimen/abc_action_bar_content_inset_material"
@@ -43,7 +44,6 @@
                 android:id="@+id/stripleimage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:onClick="startStripe"
                 android:paddingBottom="@dimen/abc_action_bar_content_inset_material"
                 android:paddingTop="@dimen/abc_action_bar_content_inset_material"
@@ -53,11 +53,17 @@
                 android:id="@+id/squareview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:onClick="startSquare"
                 android:paddingBottom="@dimen/abc_action_bar_content_inset_material"
                 android:paddingTop="@dimen/abc_action_bar_content_inset_material"
                 android:src="@drawable/square_logo_black" />
+
+            <TextView
+                android:text="@string/GetStarted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:fontFamily="sans-serif" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

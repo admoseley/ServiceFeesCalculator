@@ -2,7 +2,6 @@ package com.adrianmoseley.servicefeescalculator;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
@@ -42,6 +41,9 @@ public class SquareActivity extends AppCompatActivity {
                 " <br /> <a href=\"https://squareup.com/help/us/en/article/5068-square-s-fees-and-pricing\"> Click here to view SQUARE.COM Fees.</a>"));
         tv.setMovementMethod(LinkMovementMethod.getInstance());
 
+
+        sqFeesLargeTxt.setTextIsSelectable(true);
+        sqFinalLargeTxt.setTextIsSelectable(true);
 
         sqcalculate.setOnClickListener(new View.OnClickListener() {
             @Override

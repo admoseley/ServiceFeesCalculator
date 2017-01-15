@@ -2,7 +2,6 @@ package com.adrianmoseley.servicefeescalculator;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
@@ -41,6 +40,9 @@ public class StripeActivity extends AppCompatActivity {
         tv.setText(Html.fromHtml("<b>Not Affiliated with STRIPE.COM</b>  " +
                 " <br /> <a style=\"color:white\" href=\"https://stripe.com/us/pricing\"> Click here to view STRIPE Fees.</a>"));
         tv.setMovementMethod(LinkMovementMethod.getInstance());
+
+        stripeFeesLargeTxt.setTextIsSelectable(true);
+        stripeFinalLargeTxt.setTextIsSelectable(true);
 
         stripecalculate.setOnClickListener(new View.OnClickListener() {
             @Override

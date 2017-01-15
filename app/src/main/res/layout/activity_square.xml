@@ -11,7 +11,8 @@
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        tools:ignore="UselessParent">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
@@ -29,8 +30,6 @@
                 android:id="@+id/squareIMG"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/square_logo_white_on_black" />
 
@@ -38,9 +37,6 @@
                 android:id="@+id/square_amountlbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/payPalTitlelbl"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/amountlbl"
                 android:textAppearance="?android:attr/textAppearanceSmall"
@@ -50,9 +46,6 @@
                 android:id="@+id/squareAmountEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/square_amountlbl"
                 android:layout_gravity="center_horizontal"
                 android:background="#ffffff"
                 android:ems="10"
@@ -64,7 +57,6 @@
                 android:id="@+id/squareRatelbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/payPalAmountEditText"
                 android:layout_gravity="center_horizontal"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="#ffffff"
@@ -91,7 +83,8 @@
                     android:layout_height="wrap_content"
                     android:text="0.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:textIsSelectable="true" />
             </LinearLayout>
 
             <LinearLayout
@@ -115,7 +108,8 @@
                     android:layout_height="wrap_content"
                     android:text="0.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:textIsSelectable="true" />
 
 
             </LinearLayout>
@@ -137,9 +131,6 @@
                     android:id="@+id/squareclearbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/payPalFinalEditText"
-                    android:layout_alignEnd="@+id/payPalFinalEditText"
-                    android:layout_alignRight="@+id/payPalFinalEditText"
                     android:text="Clear" />
 
 
@@ -149,10 +140,6 @@
                 android:id="@+id/squaredisclaimer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_alignEnd="@+id/stripbtn"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignRight="@+id/stripbtn"
                 android:layout_gravity="bottom"
                 android:gravity="bottom"
                 android:text="@string/purpose"

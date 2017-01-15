@@ -9,9 +9,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.adrianmoseley.servicefeescalculator.StripeActivity">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
@@ -29,7 +32,6 @@
                 android:id="@+id/stripeIMG"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/stripe_transparent_white" />
 
@@ -37,9 +39,6 @@
                 android:id="@+id/stripe_amountlbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/payPalTitlelbl"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/amountlbl"
                 android:textAppearance="?android:attr/textAppearanceSmall"
@@ -49,9 +48,6 @@
                 android:id="@+id/stripeAmountEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/square_amountlbl"
                 android:layout_gravity="center_horizontal"
                 android:background="#ffffff"
                 android:ems="10"
@@ -63,7 +59,6 @@
                 android:id="@+id/stripeRatelbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/payPalAmountEditText"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/striperate"
                 android:textAppearance="?android:attr/textAppearanceSmall"
@@ -90,7 +85,8 @@
                     android:layout_height="wrap_content"
                     android:text="0.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:textIsSelectable="true" />
             </LinearLayout>
 
             <LinearLayout
@@ -114,7 +110,8 @@
                     android:layout_height="wrap_content"
                     android:text="0.00"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="#ffffff" />
+                    android:textColor="#ffffff"
+                    android:textIsSelectable="true" />
 
 
             </LinearLayout>
@@ -136,9 +133,6 @@
                     android:id="@+id/stripeclearbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_above="@+id/payPalFinalEditText"
-                    android:layout_alignEnd="@+id/payPalFinalEditText"
-                    android:layout_alignRight="@+id/payPalFinalEditText"
                     android:nestedScrollingEnabled="true"
                     android:text="Clear" />
 
@@ -149,10 +143,6 @@
                 android:id="@+id/stripedisclaimer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_alignEnd="@+id/stripbtn"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignRight="@+id/stripbtn"
                 android:layout_gravity="bottom"
                 android:gravity="bottom"
                 android:text="@string/purpose"

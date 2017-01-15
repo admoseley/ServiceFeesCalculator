@@ -2,7 +2,6 @@ package com.adrianmoseley.servicefeescalculator;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
@@ -42,6 +41,8 @@ public class PayPalActivity extends AppCompatActivity {
                 " <br /> <a href=\"https://www.paypal.com/us/webapps/mpp/paypal-fees\"> Click here to view Pay Pal Fees.</a>"));
         tv.setMovementMethod(LinkMovementMethod.getInstance());
 
+        payPalFeesLargeTxt.setTextIsSelectable(true);
+        payPalFinalLargeTxt.setTextIsSelectable(true);
 
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
