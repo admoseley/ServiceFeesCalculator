@@ -6,7 +6,7 @@
     <string name="action_settings">About</string>
     <string name="author">Adrian Moseley</string>
     <string name="purpose">The purpose of this application is to teach myself Android development</string>
-    <string name="GetStarted">To get started, please select a Payment Vendor Above to get fee information</string>
+    <string name="GetStarted">Please select a payment vendor to get fee information.</string>
     <string name="paypal">Pay Pal</string>
     <string name="stripe">Stripe.com</string>
     <string name="square">Square.com</string>
