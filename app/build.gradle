@@ -8,8 +8,8 @@ android {
         applicationId "com.adrianmoseley.servicefeescalculator"
         minSdkVersion 25
         targetSdkVersion 28
-        versionName '2.1'
-        versionCode 3
+        versionName '2.2'
+        versionCode 4
     }
     buildTypes {
         release {
@@ -26,5 +26,5 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
-    implementation 'com.google.firebase:firebase-appindexing:16.0.2'
+    implementation 'com.google.firebase:firebase-appindexing:18.0.0'
 }
